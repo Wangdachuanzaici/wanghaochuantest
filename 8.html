@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jquery</title>
+    <style>
+
+    </style>
+    <link rel="stylesheet" href="./css/jquery.mobile-1.4.5.min.css">
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        $("button").css("border-radius","30px").addClass("ui-btn-icon-right").removeClass("ui-btn-icon-left")
+
+      });
+    </script>
+  </head>
+  <body>
+    <div id="all" data-role="page">
+      <div data-role="header"><h2>标题</h2></div>
+
+    <div class="box" data-role="main"></div>
+    <button id="bt1" data-role="button" data-icon="arrow-l" class="ui-btn-icon-right">左键头图标</button >
+    <button id="bt2" data-role="button" data-icon="arrow-r">右键头图标</button>
+    <button id="bt3" data-role="button" data-icon="arrow-u">上键头图标</button>
+    <button id="bt4" data-role="button" data-icon="arrow-d">下键头图标</button>
+    <button id="bt5" data-role="button" data-icon="plus">加号图标</button>
+    <button id="bt6" data-role="button" data-icon="minus">减号图标</button>
+    <button id="bt7" data-role="button" data-icon="delete">删除图标</button>
+    <button id="bt8" data-role="button" data-icon="check">检查图标</button>
+    <div id="" data-role="footer"><h4>底部</h4></div>
+  </div>
+  </body>
+</html>

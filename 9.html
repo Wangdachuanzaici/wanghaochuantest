@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jquery</title>
+    <style>
+    </style>
+    <link rel="stylesheet" href="./css/jquery.mobile-1.4.5.min.css">
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript">
+    </script>
+  </head>
+  <body>
+    <div id="all" data-role="page">
+      <div data-role="header"><h2>标题1</h2></div>
+
+    <div class="box" data-role="main">
+      <a href="#page2" id="bt1" data-role="button" data-transition="fade">跳转到第二页</a>
+      第一页的内容
+    </div>
+    <div id="" data-role="footer"><h4>底部</h4></div>
+  </div>
+  <div data-role="page" id="page2">
+    <div data-role="header"><h2>标题2</h2></div>
+    <div data-role="main">
+    <a href="#all" id="bt2" data-role="button" data-transition="fade">返回第一页</a>
+    第二页的内容
+  </div>
+  <div data-role="footer">底部</div>
+  </div>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>jquery</title>
+    <style media="screen">
+
+    </style>
+    <script src="./js/jquery-1.12.4.min.js" ></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="js/jquery-ui.min.css">
+    <script type="text/javascript">
+      $(function(){
+        $('#dialog').css("color","red").dialog({
+            buttons:[{text: "√确定", click: function(){$(this).dialog("close")}},
+                    {text: "×取消", click: function(){$(this).dialog("close")}}],
+          // buttons: [{text: "×取消", click: function(){$(this).dialog("close")}}],
+          modal : true,
+          autoOpen: false
+        });
+        $("#show").button().click(function(){
+           $('#dialog').dialog("open")
+        })
+      });
+    </script>
+  </head>
+  <body>
+    <button id="show">单击这里</button>
+    <div id="dialog">你确定要删除所选文件吗？
+      <hr/>
+    </div>
+  </body>
+</html>

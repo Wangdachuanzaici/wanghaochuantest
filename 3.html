@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>jquery</title>
+    <style media="screen">
+      .back{
+        background-color: yellow;
+      }
+      p{
+        background: black;
+        color: white;
+      }
+    </style>
+    <script src="./js/jquery-1.12.4.min.js" ></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="js/jquery-ui.min.css">
+    <script type="text/javascript">
+      $(function(){
+        $("#box1").accordion();
+        $("p").mouseover(function(){
+          $(this).css('background-color',"yellow");
+        });
+        $("p").mouseout(function(){
+          $(this).css("background-color","black");
+        })
+      });
+    </script>
+  </head>
+  <body>
+    <div id="box1">
+      <h3>AjaxShake</h3>
+      <div>
+      <p>jQuery</p>
+      <p>Flash</p>
+      <p>Prototype</p>
+      <p>Mootools</p>
+    </div>
+      <h3>jsonP Examples</h3>
+      <div><p>klajglkj</p>
+        <p>KLAJD</p>
+      </div>
+      <h3>Friend Sites</h3>
+      <div>
+        <p>172</p>
+        <p>27</p>
+      </div>
+      <h3>Others</h3>
+      <div><p>HTML</p></div>
+    </div>
+  </body>
+</html>
