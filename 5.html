@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>5-test-sort</title>
+  </head>
+  <body>
+    <script>
+      var lis = new Array(23,1,14,1,3,20,3,22,17,23);
+      for (var i = 0 ,len = lis.length; i < len ; i++){
+      //  lis[i].index = i;
+        for(var j = 0 , len = lis.length; j < len; j++){
+          if( i != j && lis[i] == lis[j]){
+            lis.splice(i,1);
+          }
+        }
+      }
+
+      lis.sort(function(a,b){
+        return a-b;
+      })
+
+      console.log(lis);
+    </script>
+  </body>
+</html>

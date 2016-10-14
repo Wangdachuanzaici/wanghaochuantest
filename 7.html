@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>7-test</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+
+      .box{
+        width: 200px;
+        height: 200px;
+        background: yellow;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box" id="box-id"></div>
+    <script>
+    var div = document.getElementById("box-id");
+    div.style.float = "left";
+    div.style.display = "block";
+    console.log("box.width=",div.offsetWidth);
+    console.log("box.height=",div.offsetHeight);
+    div.style.display = "none";
+    </script>
+  </body>
+</html>

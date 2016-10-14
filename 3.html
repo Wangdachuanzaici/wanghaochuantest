@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>3-test-strim</title>
+  </head>
+  <body>
+    <script>
+      str = "I say something /n separ n\
+         fakfj fadj "
+         console.log(str);
+      lis = str.split("");
+      console.log(lis);
+      var newlis = lis.filter(function(element){
+        return element != " ";
+      })
+      console.log(newlis);
+      var lastlis = newlis.join("");
+      console.log(lastlis);
+    </script>
+  </body>
+</html>

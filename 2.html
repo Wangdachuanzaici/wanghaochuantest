@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>2.text</title>
+    <style media="screen">
+      *{
+        margin: 0;
+        padding: 0;
+      }
+
+      .box{
+        width: 400px;
+        height: 600px;
+        margin: 100px auto;
+        font-size: 26px;
+        color: blue;
+        border: 1px solid red;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .box p{
+        position: absolute;
+      }
+
+      .box .right{
+        width: 20px;
+        height: 600px;
+        float: right;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: lightgray;
+      }
+
+      .box .right span{
+        background: red;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 20px;
+        height: 100px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box" id ="div-1">
+      <p id ="text">拉克机房监控卡拉俄军方可字符转换分v
+      拉克机房监控卡拉俄军方可字符转换分v
+      拉克机房监控卡拉俄军方可字符转换分v
+      拉克机房监控卡拉俄军方可字符转换分v
+      拉克机房监控卡拉俄军方可字符转换分v
+      拉克机房监控卡拉俄军方可字符转换分v
+      拉克机房监控卡拉俄军方可字符转换分v
+      拉克机房监控卡拉俄军方可字符转换分v
+      阿甘可卡及俄军方嘎可
+      饿啊非个人无可救阿哥化工科技阿v
+      阿飞科技和同噶讲噶白狐阿
+      阿瓜颇具规模vzdjpoweijg
+      高vlreakjgkrjagj
+      阿斯地哦品牌俄日土奇特哦操作大哇嘎ie阿迪司法会计哦ijc发哦ijejfe 的反馈将
+      阿甘可卡及俄军方嘎可
+      饿啊非个人无可救阿哥化工科技阿v
+      阿飞科技和同噶讲噶白狐阿
+      阿瓜颇具规模vzdjpoweijg
+      高vlreakjgkrjagj
+      阿斯地哦品牌俄日土奇特哦操作大哇嘎ie阿迪司法会计哦ijc发哦ijejfe 的反馈将
+      阿甘可卡及俄军方嘎可
+      饿啊非个人无可救阿哥化工科技阿v
+      阿飞科技和同噶讲噶白狐阿
+      阿瓜颇具规模vzdjpoweijg
+      高vlreakjgkrjagj
+      阿斯地哦品牌俄日土奇特哦操作大哇嘎ie阿迪司法会计哦ijc发哦ijejfe 的反馈将
+      阿甘可卡及俄军方嘎可
+      饿啊非个人无可救阿哥化工科技阿v
+      阿飞科技和同噶讲噶白狐阿
+      阿瓜颇具规模vzdjpoweijg
+      高vlreakjgkrjagj
+      阿斯地哦品牌俄日土奇特哦操作大哇嘎ie阿迪司法会计哦ijc发哦ijejfe 的反馈将
+      阿甘可卡及俄军方嘎可
+      饿啊非个人无可救阿哥化工科技阿v
+      阿飞科技和同噶讲噶白狐阿
+      阿瓜颇具规模vzdjpoweijg
+      高vlreakjgkrjagj
+      阿斯地哦品牌俄日土奇特哦操作大哇嘎ie阿迪司法会计哦ijc发哦ijejfe 的反馈将
+      阿甘可卡及俄军方嘎可
+      饿啊非个人无可救阿哥化工科技阿v
+      阿飞科技和同噶讲噶白狐阿
+      阿瓜颇具规模vzdjpoweijg
+      高vlreakjgkrjagj
+      阿斯地哦品牌俄日土奇特哦操作大哇嘎ie阿迪司法会计哦ijc发哦ijejfe 的反馈将
+      阿甘可卡及俄军方嘎可
+      饿啊非个人无可救阿哥化工科技阿v
+      阿飞科技和同噶讲噶白狐阿
+      阿瓜颇具规模vzdjpoweijg
+      高vlreakjgkrjagj
+      阿斯地哦品牌俄日土奇特哦操作大哇嘎ie阿迪司法会计哦ijc发哦ijejfe 的反馈将
+      阿甘可卡及俄军方嘎可
+      饿啊非个人无可救阿哥化工科技阿v
+      阿飞科技和同噶讲噶白狐阿
+      阿瓜颇具规模vzdjpoweijg
+      高vlreakjgkrjagj
+      阿斯地哦品牌俄日土奇特哦操作大哇嘎ie阿迪司法会计哦ijc发哦ijejfe 的反馈将
+    </p>
+      <div class="right">
+      <span id="tuodong"></span>
+      <script>
+        var dv1 = document.getElementById("div-1");
+        var scroll = document.getElementById("tuodong");
+        var text = document.getElementById("text");
+        var dv1offsettop = dv1.offsetTop;
+        var bili = text.offsetHeight / dv1.offsetHeight ;
+        //console.log(bili);
+
+        scroll.onmousedown = function(e){
+          document.onmousemove = function(e){
+            var pageY = e.pageY;
+            var offsetY = pageY - dv1offsettop;
+            console.log(offsetY);
+
+            if (offsetY <= 0){
+              offsetY = 0;
+            }else if (offsetY >= dv1.offsetHeight - scroll.offsetHeight){
+              offsetY = dv1.offsetHeight - scroll.offsetHeight;
+            }
+            scroll.style.top = offsetY + "px";
+            text.style.top = -offsetY * bili + "px";
+          }
+          document.onmouseup = function(){
+            document.onmousemove = null;
+          }
+        }
+      </script>
+
+      </div>
+    </div>
+  </body>
+</html>
